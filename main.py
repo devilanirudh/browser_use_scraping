@@ -8,7 +8,7 @@ import asyncio
 # Load environment variables
 load_dotenv()
 
-api_key = "AIzaSyDOlDvZQZkcNE1_3Rajbrjc0NtO-6rPWDg"
+api_key = os.environ.get("api_key")
 
 # Initialize the model
 def get_gemini_model():
